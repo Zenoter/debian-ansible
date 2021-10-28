@@ -19,7 +19,12 @@
   #   when: gnome is defined and gnome == true
   # - include_tasks: desktop_environments/gnome/tracker.yml
   #   when: gnome is defined and gnome == true
-
+  /root/.ansible/pull/debian-testing/roles/workstation/vars/Debian.yml
+  /root/.ansible/pull/debian-testing/roles/workstation/Debian.yml
+  /root/.ansible/pull/debian-testing/roles/workstation/tasks/vars/Debian.yml
+  /root/.ansible/pull/debian-testing/roles/workstation/tasks/Debian.yml
+  /root/.ansible/pull/debian-testing/vars/Debian.yml
+  /root/.ansible/pull/debian-testing/Debian.yml
   ## system setup
   # - import_tasks: system_setup/autofs.yml
   # - import_tasks: system_setup/scripts.yml
