@@ -1,7 +1,7 @@
 # Load distro-specific variables
 - include_vars: "{{ ansible_distribution }}.yml"
-  tags: always
 
+- block:
 ## desktop environments
   # - include_tasks: desktop_environments/gnome/appearance.yml
   #   when: gnome is defined and gnome == true
@@ -26,7 +26,7 @@
   # - import_tasks: system_setup/tweaks.yml
 
   ## install software
-- import_tasks: software/basic.yml
+  - import_tasks: software/basic.yml
   # - import_tasks: software/audacity.yml
   # - import_tasks: software/authy.yml
   # - import_tasks: software/bitwarden.yml
